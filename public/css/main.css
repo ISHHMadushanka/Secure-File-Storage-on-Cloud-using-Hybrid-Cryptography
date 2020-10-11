@@ -1,0 +1,35 @@
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 10px 0;
+}
+
+    .content {
+       text-align: center;
+       background-color: rgb(143, 125, 173);
+       font-family: "Times New Roman", Times, serif;
+        color: white;
+
+    }
+
+    .navbar-nav {
+       color: white ;
+       font-size: 20px;
+       text-decoration: none;
+
+    }
+
+    .nav-link {
+        margin: 0 17px;
+    }
+
+
+    .wrapper .container{
+        margin: auto;
+
+
+    }
+
+    .footer {
+        text-align: center;
+    }
