@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +14,12 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+Route::get('/', 'PagesController@indexindex');
 
 Route::get('/about', 'PagesController@indexabout');
 
@@ -23,15 +27,8 @@ Route::get('/owner', 'PagesController@indexowner');
 
 Route::get('/user', 'PagesController@indexuser');
 
-Route::get('/home', 'PagesController@indexhome');
-
-
-
-
 
 
 Auth::routes();
 
-Route::get('/owner', 'HomeController@index')->name('owner');
-Route::get('/user', 'HomeController@index')->name('user');
-
+Route::get('/home', 'HomeController@index')->name('home');

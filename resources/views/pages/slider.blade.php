@@ -6,13 +6,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-      <img src="{{ asset('/img/abb.jpg') }}" class="d-block w-100" alt="..." height="400px" width="1000px">
+      <img src="{{ asset('/img/ddd.png') }}" class="d-block w-100" alt="..." height="400px" width="1000px">
       </div>
       <div class="carousel-item">
-        <img src="{{ asset('/img/bbb.jpg') }}" class="d-block w-100" alt="..." height="400px" width="1000px">
+        <img src="{{ asset('/img/iii.jpg') }}" class="d-block w-100" alt="..." height="400px" width="1000px">
       </div>
       <div class="carousel-item">
-        <img src="{{ asset('/img/aaa.jpg') }}" class="d-block w-100" alt="..." height="400px" width="1000px">
+        <img src="{{ asset('/img/eee.jpg') }}" class="d-block w-100" alt="..." height="400px" width="1000px">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

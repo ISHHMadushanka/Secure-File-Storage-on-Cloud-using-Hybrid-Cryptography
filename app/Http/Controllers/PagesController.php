@@ -5,21 +5,22 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
+
 {
-   public function indexabout(){
-    return view('about');
-   }
+    public function indexindex(){
+     return view('pages.index');
+    }
 
-   public function indexowner(){
-    return view('owner');
-   }
+    public function indexowner(){
+     return view('pages.owner');
+    }
 
-   public function indexuser(){
-    return view('user');
-   }
+    public function indexuser(){
+     return view('pages.user');
+    }
 
-   public function indexhome(){
-    return view('home');
-   }
+    public function indexabout(){
+     return view('pages.about');
+    }
 
-}
+ }

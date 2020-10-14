@@ -1,18 +1,23 @@
-@extends('welcome')
+@extends('layouts.app')
 
 @section('content')
-<div class="wrapper">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
 
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
- <div class="container">
-
-  @include('/slider')
-
+                    You are logged in!
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-<h1>File Split Project</h1>
-
-<p>Latest news has revealed that the security of cryptographic keys have broken when retrieving information from back doors of cryptographic softwares once encryption key is exposed.Therefore, the most securely way to store data is limiting of the access of attackers to the ciphertext.</p>
-
-</div> <!-- wrapper-->
-@stop
+@endsection 

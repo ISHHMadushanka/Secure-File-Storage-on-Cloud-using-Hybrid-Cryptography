@@ -10,43 +10,40 @@
         <title>Laravel</title>
    <link rel="stylesheet" href="/css/main.css">
     </head>
+
     <body>
+        <div class="flex-center position-ref full-height">
+            @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
 
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
 
-       <div class="content">
-        <span class="navbar-text">
-            <h1>Secure File Storage on Cloud Using Hybrid Cryptography</h1>
-          </span>
-        </div>
+            <div class="content">
+                <div class="title m-b-md">
+                    Laravel
+                </div>
 
-
-
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" href="/home">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="/owner">Owner</a>
-              <a class="nav-link" href="/user">User</a>
-                <a class="nav-link" href="/about">About</a>
-
-              </div>
+                <div class="links">
+                    <a href="https://laravel.com/docs">Docs</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://blog.laravel.com">Blog</a>
+                    <a href="https://nova.laravel.com">Nova</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://vapor.laravel.com">Vapor</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                </div>
             </div>
-          </nav>
-
-
-
-          <div>
-         @yield('content')
-          </div>
-
-      </div> <!-- wrapper-->
-
-            <footer class="footer">Copyright © 2020 Security File Transfer.</footer>
-
+        </div>
+       
     </body>
 </html>

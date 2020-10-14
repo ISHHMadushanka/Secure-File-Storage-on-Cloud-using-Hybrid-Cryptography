@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a0e68d89b3d2269583d956d8250fb08",
+    "content-hash": "03f1e701755b133eb0c3a288c9578332",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -208,23 +208,23 @@
         },
         {
             "name": "dragonmantank/cron-expression",
-            "version": "v2.3.0",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dragonmantank/cron-expression.git",
-                "reference": "72b6fbf76adb3cf5bc0db68559b33d41219aba27"
+                "reference": "65b2d8ee1f10915efb3b55597da3404f096acba2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/72b6fbf76adb3cf5bc0db68559b33d41219aba27",
-                "reference": "72b6fbf76adb3cf5bc0db68559b33d41219aba27",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/65b2d8ee1f10915efb3b55597da3404f096acba2",
+                "reference": "65b2d8ee1f10915efb3b55597da3404f096acba2",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": "^7.0|^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.4|^7.0"
+                "phpunit/phpunit": "^6.4|^7.0|^8.0|^9.0"
             },
             "type": "library",
             "extra": {
@@ -258,7 +258,13 @@
                 "cron",
                 "schedule"
             ],
-            "time": "2019-03-31T00:38:28+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/dragonmantank",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-13T00:52:37+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -374,16 +380,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.18.42",
+            "version": "v6.18.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "ea27c9af8f9fbd27ab0753749830c267f25de9d4"
+                "reference": "7a6043b9049a93a6388d6ab6ac50dad28600d227"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/ea27c9af8f9fbd27ab0753749830c267f25de9d4",
-                "reference": "ea27c9af8f9fbd27ab0753749830c267f25de9d4",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7a6043b9049a93a6388d6ab6ac50dad28600d227",
+                "reference": "7a6043b9049a93a6388d6ab6ac50dad28600d227",
                 "shasum": ""
             },
             "require": {
@@ -519,7 +525,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-10-06T14:21:51+00:00"
+            "time": "2020-10-13T14:20:24+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -915,16 +921,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.41.1",
+            "version": "2.41.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "91d8d8dca31936a137213d7c48f8ac981e501ff4"
+                "reference": "e148788eeae9b9b7b87996520358b86faad37b52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/91d8d8dca31936a137213d7c48f8ac981e501ff4",
-                "reference": "91d8d8dca31936a137213d7c48f8ac981e501ff4",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e148788eeae9b9b7b87996520358b86faad37b52",
+                "reference": "e148788eeae9b9b7b87996520358b86faad37b52",
                 "shasum": ""
             },
             "require": {
@@ -1000,7 +1006,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-10T11:06:56+00:00"
+            "time": "2020-10-12T20:36:09+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -1056,29 +1062,29 @@
         },
         {
             "name": "opis/closure",
-            "version": "3.5.7",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "4531e53afe2fc660403e76fb7644e95998bff7bf"
+                "reference": "c547f8262a5fa9ff507bd06cc394067b83a75085"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/4531e53afe2fc660403e76fb7644e95998bff7bf",
-                "reference": "4531e53afe2fc660403e76fb7644e95998bff7bf",
+                "url": "https://api.github.com/repos/opis/closure/zipball/c547f8262a5fa9ff507bd06cc394067b83a75085",
+                "reference": "c547f8262a5fa9ff507bd06cc394067b83a75085",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.4 || ^7.0"
+                "php": "^5.4 || ^7.0 || ^8.0"
             },
             "require-dev": {
                 "jeremeamia/superclosure": "^2.0",
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.5.x-dev"
+                    "dev-master": "3.6.x-dev"
                 }
             },
             "autoload": {
@@ -1113,7 +1119,7 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2020-09-06T17:02:15+00:00"
+            "time": "2020-10-11T21:42:15+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -4253,16 +4259,16 @@
         },
         {
             "name": "laravel/ui",
-            "version": "v1.0.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/ui.git",
-                "reference": "7ea4b47cb9e47117ea8557e1d463d25900a7df0b"
+                "reference": "bb64fca681566ca94457d490a00f899516e75664"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/ui/zipball/7ea4b47cb9e47117ea8557e1d463d25900a7df0b",
-                "reference": "7ea4b47cb9e47117ea8557e1d463d25900a7df0b",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/bb64fca681566ca94457d490a00f899516e75664",
+                "reference": "bb64fca681566ca94457d490a00f899516e75664",
                 "shasum": ""
             },
             "require": {
@@ -4277,9 +4283,6 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                },
                 "laravel": {
                     "providers": [
                         "Laravel\\Ui\\UiServiceProvider"
@@ -4306,7 +4309,7 @@
                 "laravel",
                 "ui"
             ],
-            "time": "2019-08-13T20:10:17+00:00"
+            "time": "2020-02-13T21:12:28+00:00"
         },
         {
             "name": "mockery/mockery",

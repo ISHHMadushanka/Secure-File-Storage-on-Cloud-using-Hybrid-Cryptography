@@ -1,10 +1,22 @@
 .wrapper {
     margin: 0 auto;
     width: 1200px;
-    padding: 10px 0;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif
 }
 
-    .content {
+h1 {
+    font-size: 3.2vw;
+}
+
+
+
+
+    .contents{
        text-align: center;
        background-color: rgb(143, 125, 173);
        font-family: "Times New Roman", Times, serif;
@@ -12,10 +24,11 @@
 
     }
 
-    .navbar-nav {
+    .nav-item {
        color: white ;
-       font-size: 20px;
+       font-size: 18px;
        text-decoration: none;
+       font-family: 'Poppins', sans-serif
 
     }
 
@@ -24,12 +37,12 @@
     }
 
 
-    .wrapper .container{
-        margin: auto;
-
+    .contain {
+        margin: -23.52px;
 
     }
 
     .footer {
         text-align: center;
     }
+
