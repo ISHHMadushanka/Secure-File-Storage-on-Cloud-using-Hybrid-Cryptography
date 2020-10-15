@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Auth;
 });
 */
 
+/* front end location */
+
 Route::get('/', 'PagesController@indexindex');
 
 Route::get('/about', 'PagesController@indexabout');
@@ -29,6 +31,25 @@ Route::get('/user', 'PagesController@indexuser');
 
 
 
+/* front end location */
+
+
+
+/* admin location */
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware'=>'auth'], function () {
+    Route::get('/panel', function() {
+        return view('admin.index');
+  });
+});
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+
+
+
+
