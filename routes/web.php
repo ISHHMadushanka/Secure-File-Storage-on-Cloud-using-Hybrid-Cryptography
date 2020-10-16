@@ -14,42 +14,27 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});
-*/
-
-/* front end location */
-
 Route::get('/', 'PagesController@indexindex');
 
 Route::get('/about', 'PagesController@indexabout');
 
-Route::get('/owner', 'PagesController@indexowner');
-
-Route::get('/user', 'PagesController@indexuser');
 
 
-
-/* front end location */
-
-
-
-/* admin location */
+// Route::view('/', 'welcome');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/login/admin', 'Auth\LoginController@showAdminLoginForm');
 
-Route::group(['middleware'=>'auth'], function () {
-    Route::get('/panel', function() {
-        return view('admin.index');
-  });
-});
+Route::get('/register/admin', 'Auth\RegisterController@showAdminRegisterForm');
+
+
+Route::post('/login/admin', 'Auth\LoginController@adminLogin');
+
+Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
+
+
+Route::view('/home', 'home')->middleware('auth');
+Route::view('/admin', 'admin');
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
-
-
-
-
-

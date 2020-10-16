@@ -11,15 +11,8 @@ class PagesController extends Controller
      return view('pages.index');
     }
 
-    public function indexowner(){
-     return view('pages.owner');
-    }
 
-    public function indexuser(){
-     return view('pages.user');
-    }
-
-    public function indexabout(){
+    public function indexabout() {
      return view('pages.about');
     }
 

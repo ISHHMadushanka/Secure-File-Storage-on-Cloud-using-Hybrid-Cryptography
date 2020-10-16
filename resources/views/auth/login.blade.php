@@ -1,17 +1,20 @@
 @extends('layouts.app')
 
-<!-- @section('title', 'Login Page') -->
-
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header"> {{ isset($url) ? ucwords($url) : ""}} {{ __('Login') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+                    @isset($url)
+                    <form method="POST" action='{{ url("login/$url") }}' aria-label="{{ __('Login') }}">
+                    @else
+                    <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
+                    @endisset
                         @csrf
+
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>

@@ -46,14 +46,6 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/owner">Owner</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="/user">User</a>
-                        </li>
-
-                        <li class="nav-item">
                             <a class="nav-link" href="/about">About</a>
                         </li>
 
