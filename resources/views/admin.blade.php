@@ -1,87 +1,80 @@
 @extends('layouts.auth')
 
 @section('content')
-<div class="container">
- <!-- <div class="row justify-content-center">  -->
-       <!-- <div class="col-md-8"> -->
+<!-- <div class="container"> -->
+ <div class="row justify-content-center">
+       <!-- <div class="col-md-8">  -->
            <br>
 
-                <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-                <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/">SecureFileTransfer</a>
-                <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-                <ul class="navbar-nav px-3">
-                  <li class="nav-item text-nowrap">
-                    <a class="nav-link" href="{{ url('/logout') }}">Log out</a>
-                  </li>
-                </ul>
-              </nav>
+  <body>
 
-
-              <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                  <h1 class="h2">ADMIN Dashboard</h1>
-
-                </div>
-
-               <div class="container">
-                ddd
-               </div>
-
-            </main>
-
-
-              <div class="container-fluid">
-                <div class="row">
-                  <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-                    <div class="sidebar-sticky pt-3">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                              <a class="nav-link active" href="/">
-                                <span data-feather="home"></span>
-                                Home <span class="sr-only">(current)</span>
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">
-                                <span data-feather="file"></span>
-                                File Upload
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">
-                                <span data-feather="view"></span>
-                                View Files
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">
-                                <span data-feather="split"></span>
-                               View Split Data
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                  <span data-feather="request"></span>
-                                 View Request
-                                </a>
-                              </li>
-
-                          </ul>
-                      </div>
-
-                  </nav>
-                  </div>
-                  </div>
-
-
-
-
-
-
-           <!-- </div>  -->
-       <!-- </div>   -->
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3>ADMIN <span>Dashboard</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="{{ url('/logout') }}" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <img src="/img/1.png" class="mobile_profile_image" alt="">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+        <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+        <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
+        <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+        <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+      </div>
     </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="/img/1.png" class="profile_image" alt="">
+        <h4><b>Jessica</b></h4>
+      </div>
+      <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+      <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+      <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
+      <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+      <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+      <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+      <div class="card">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem saepe consequuntur placeat,
+          quasi quo possimus praesentium
+           qui suscipit quis reiciendis esse. Nemo, placeat distinctio? Ipsum alias corporis aut sit culpa.</p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
+</html>
+
+
+
+          <!--  </div>  -->
+        </div>
+ <!--   </div>  -->
 @endsection
