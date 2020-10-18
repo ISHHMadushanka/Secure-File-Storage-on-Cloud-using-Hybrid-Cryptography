@@ -30,10 +30,10 @@
       </div>
       <div class="mobile_nav_items">
         <a href="/"><i class="fas fa-home"></i><span>Home</span></a>
-        <a href="/fileupload"><i class="fas fa-upload"></i><span>File Upload</span></a>
-        <a href="#"><i class="fas fa-file"></i><span>View Files</span></a>
-        <a href="#"><i class="fas fa-database"></i><span>View Split Data</span></a>
-        <a href="#"><i class="fas fa-eye"></i><span>View Request</span></a>
+        <a href="/fileupload" class="active"><i class="fas fa-upload"></i><span>File Upload</span></a>
+        <a href="/viewfile"><i class="fas fa-file"></i><span>View Files</span></a>
+        <a href="/viewsplitdata"><i class="fas fa-database"></i><span>View Split Data</span></a>
+        <a href="/viewrequest"><i class="fas fa-eye"></i><span>View Request</span></a>
         <a href="{{ url('/logout') }}"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
       </div>
     </div>
@@ -45,35 +45,67 @@
         <h4><b>Jessica</b></h4>
       </div>
       <a href="/"><i class="fas fa-home"></i><span>HOME</span></a>
-      <a href="/fileupload"><i class="fas fa-upload"></i><span>File Upload</span></a>
-      <a href="#"><i class="fas fa-file"></i><span>View Files</span></a>
-      <a href="#"><i class="fas fa-database"></i><span>View Split Data</span></a>
-      <a href="#"><i class="fas fa-eye"></i><span>View Request</span></a>
+      <a href="/fileupload" class="active"><i class="fas fa-upload"></i><span>File Upload</span></a>
+      <a href="/viewfile"><i class="fas fa-file"></i><span>View Files</span></a>
+      <a href="viewsplitdata"><i class="fas fa-database"></i><span>View Split Data</span></a>
+      <a href="viewrequest"><i class="fas fa-eye"></i><span>View Request</span></a>
       <a href="{{ url('/logout') }}"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
     </div>
     <!--sidebar end-->
 
     <div class="content">
-        <div class="card mb-3" style="max-width: 1200px;">
+        <div class="card text-white bg-dark mb-3" style="max-width: 1200px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="/img/xxx.jpg"  height="250px" class="card-img" alt="...">
+                <img src="/img/hnb.png"  height="325px" class="card-img" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">File Split Project</h5>
-                  <p class="card-text">Latest news has revealed that the security of cryptographic keys have broken when retrieving
-                    information from back doors of cryptographic
-                    softwares once encryption key is exposed.Therefore, the most securely way to store data is
-                     limiting of the access of attackers to the ciphertext. </p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h5 class="card-title">File Upload</h5>
+                  <form>
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationDefault01">Owner name</label>
+                        <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                      </div>
+
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationDefault02">File Name</label>
+                        <input type="text" class="form-control" id="validationDefault03" required>
+                      </div>
+                      <div class="col-md-3 mb-3">
+
+                            <div class="form-group">
+                              <label for="exampleFormControlFile1">Example file input</label>
+                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationDefault03">Zip</label>
+                        <input type="text" class="form-control" id="validationDefault05" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Agree to terms and conditions
+                        </label>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Upload the file</button>
+                  </form>
+
                 </div>
               </div>
             </div>
           </div>
 
 
-          <br> <br>
+          <br>
 
           <div class="row">
             <div class="col-sm-6">
@@ -104,7 +136,13 @@
             </div>
           </div>
 
-        </div>
+
+
+    </div>
+
+
+
+
 
     <script type="text/javascript">
     $(document).ready(function(){
@@ -115,7 +153,7 @@
     </script>
 
   </body>
-</html>
+
 
 
 

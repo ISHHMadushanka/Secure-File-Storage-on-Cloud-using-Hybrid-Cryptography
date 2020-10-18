@@ -28,10 +28,15 @@ Route::get('/login/admin', 'Auth\LoginController@showAdminLoginForm');
 
 Route::get('/register/admin', 'Auth\RegisterController@showAdminRegisterForm');
 
+Route::get('/fileupload', 'PagesController@indexfileupload');
+Route::get('/viewfile', 'PagesController@indexviewfile');
+Route::get('/viewsplitdata', 'PagesController@indexviewsplitdata');
+Route::get('/viewrequest', 'PagesController@indexviewrequest');
 
 Route::post('/login/admin', 'Auth\LoginController@adminLogin');
 
 Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
+
 
 
 Route::view('/home', 'home')->middleware('auth');

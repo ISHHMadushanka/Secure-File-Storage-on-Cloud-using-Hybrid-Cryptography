@@ -133,7 +133,7 @@ label #sidebar_btn:hover{
 }
 
 .content{
-  width: (100% - 250px);
+  width: 1200px;
   margin-top: -50px;
   margin-bottom: -30px;
   padding: 20px;
@@ -141,7 +141,7 @@ label #sidebar_btn:hover{
   background: url(/img/background.png) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 105vh;
   transition: 0.5s;
 }
 
@@ -192,6 +192,12 @@ label #sidebar_btn:hover{
     padding: 10px 20px;
     transition: 0s;
   }
+
+
+.content h2 {
+    font-weight: normal;
+  border-bottom: 2px solid red;
+}
 
   #check:checked ~ .content{
     margin-left: 0;

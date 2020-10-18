@@ -16,4 +16,20 @@ class PagesController extends Controller
      return view('pages.about');
     }
 
+    public function indexfileupload() {
+        return view('pages.fileupload');
+       }
+
+    public function indexviewfile() {
+       return view('pages.viewfile');
+       }
+
+    public function indexviewsplitdata() {
+       return view('pages.viewsplitdata');
+        }
+
+    public function indexviewrequest() {
+        return view('pages.viewrequest');
+       }
+
  }
