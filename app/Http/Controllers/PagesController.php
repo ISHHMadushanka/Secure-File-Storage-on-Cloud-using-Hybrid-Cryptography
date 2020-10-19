@@ -32,4 +32,13 @@ class PagesController extends Controller
         return view('pages.viewrequest');
        }
 
+       public function indexviewfiles() {
+        return view('pages.viewfiles');
+       }
+
+       public function indexverify() {
+        return view('pages.verify');
+       }
+
+
  }

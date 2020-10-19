@@ -30,8 +30,8 @@
       </div>
       <div class="mobile_nav_items">
         <a href="/"><i class="fas fa-home"></i><span>Home</span></a>
-        <a href="/viewfiles"><i class="fas fa-file"></i><span>View Files</span></a>
-        <a href="#"><i class="fas fa-database"></i><span>Verify</span></a>
+        <a href="/viewfiles" class="active"><i class="fas fa-file"></i><span>View Files</span></a>
+        <a href="/verify"><i class="fas fa-database"></i><span>Verify</span></a>
         <a href="{{ url('/logout') }}"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
       </div>
     </div>
@@ -43,8 +43,8 @@
         <h4><b>Jessica</b></h4>
       </div>
       <a href="/"><i class="fas fa-home"></i><span>HOME</span></a>
-      <a href="viewfiles"><i class="fas fa-file"></i><span>View Files</span></a>
-      <a href="#"><i class="fas fa-database"></i><span>Verify</span></a>
+      <a href="/viewfiles" class="active"><i class="fas fa-file"></i><span>View Files</span></a>
+      <a href="/verify"><i class="fas fa-database"></i><span>Verify</span></a>
       <a href="{{ url('/logout') }}"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a>
     </div>
     <!--sidebar end-->

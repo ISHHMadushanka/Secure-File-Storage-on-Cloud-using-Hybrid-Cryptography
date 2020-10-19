@@ -33,6 +33,9 @@ Route::get('/viewfile', 'PagesController@indexviewfile');
 Route::get('/viewsplitdata', 'PagesController@indexviewsplitdata');
 Route::get('/viewrequest', 'PagesController@indexviewrequest');
 
+Route::get('/viewfiles', 'PagesController@indexviewfiles');
+Route::get('/verify', 'PagesController@indexverify');
+
 Route::post('/login/admin', 'Auth\LoginController@adminLogin');
 
 Route::post('/register/admin', 'Auth\RegisterController@createAdmin');

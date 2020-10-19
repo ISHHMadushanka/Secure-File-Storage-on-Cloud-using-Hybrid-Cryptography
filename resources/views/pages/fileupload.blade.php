@@ -66,7 +66,7 @@
                     <div class="form-row">
                       <div class="col-md-6 mb-3">
                         <label for="validationDefault01">Owner name</label>
-                        <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                        <input type="text" class="form-control" id="validationDefault01" value="" required>
                       </div>
 
                     </div>
