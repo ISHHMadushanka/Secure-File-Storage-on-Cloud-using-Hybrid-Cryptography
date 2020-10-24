@@ -62,35 +62,36 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">File Upload</h5>
-                  <form>
+                  <form action="/store" method="POST" enctype="multipart/form-data">
+                    {{ csrf_field() }}
                     <div class="form-row">
                       <div class="col-md-6 mb-3">
                         <label for="validationDefault01">Owner name</label>
-                        <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        <input type="text" class="form-control" name="owner" id="validationDefault01" value="" required>
                       </div>
 
                     </div>
                     <div class="form-row">
                       <div class="col-md-6 mb-3">
                         <label for="validationDefault02">File Name</label>
-                        <input type="text" class="form-control" id="validationDefault03" required>
+                        <input type="text" class="form-control" name="filename" id="validationDefault03" required>
                       </div>
                       <div class="col-md-3 mb-3">
 
                             <div class="form-group">
                               <label for="exampleFormControlFile1">Example file input</label>
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                              <input type="file" class="form-control-file" name="file" id="exampleFormControlFile1">
                             </div>
 
                       </div>
                       <div class="col-md-3 mb-3">
-                        <label for="validationDefault03">Zip</label>
-                        <input type="text" class="form-control" id="validationDefault05" required>
+                        <label for="validationDefault03">Date</label>
+                        <input type="date" class="form-control" name="date" id="validationDefault05" required>
                       </div>
                     </div>
                     <div class="form-group">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <input class="form-check-input" type="checkbox" value="" name="checkbox" id="invalidCheck2" required>
                         <label class="form-check-label" for="invalidCheck2">
                           Agree to terms and conditions
                         </label>

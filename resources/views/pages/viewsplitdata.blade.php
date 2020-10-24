@@ -55,7 +55,32 @@
 
     <div class="content">
 
-  <h2>view split data</h2>
+  <h2 style="text-align: center">view split data</h2>
+
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">File Name</th>
+        <th scope="col">Part 1</th>
+        <th scope="col">Part 2</th>
+        <th scope="col">Part 3</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        @isset($fileuploads)
+
+
+      <tr>
+        <th></th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      @endisset
+    </tbody>
+  </table>
 
     </div>
 

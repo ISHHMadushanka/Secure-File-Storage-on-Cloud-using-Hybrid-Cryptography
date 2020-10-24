@@ -55,7 +55,31 @@
 
     <div class="content">
 
-  <h2>view request</h2>
+  <h2  style="text-align: center">view request</h2>
+
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">File Name</th>
+        <th scope="col">Owner</th>
+        <th scope="col">User</th>
+        <th scope="col">Send</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        @isset($fileuploads)
+
+      <tr>
+        <th></th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      @endisset
+    </tbody>
+  </table>
 
     </div>
 

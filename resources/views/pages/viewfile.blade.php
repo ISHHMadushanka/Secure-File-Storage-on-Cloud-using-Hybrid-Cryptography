@@ -55,12 +55,42 @@
 
     <div class="content">
 
-  <h2>view file</h2>
+  <h2 style="text-align: center">view file</h2>
+
+
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Owner</th>
+            <th scope="col">File Name</th>
+            <th scope="col">File Content</th>
+            <th scope="col">Date</th>
+            <th scope="col">Split</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            @isset($fileuploads)
+
+            @foreach($fileuploads as $fileupload)
+
+          <tr>
+          <td> {{ $fileupload->id }} </td>
+            <td> {{ $fileupload->owner }} </td>
+            <td> {{ $fileupload->filename }} </td>
+            <td> {{ $fileupload->file }} </td>
+            <td> {{ $fileupload->date }} </td>
+            <td><a href="#">Clike</a></td>
+          </tr>
+          @endforeach
+          @endisset
+        </tbody>
+
+      </table>
+
 
     </div>
-
-
-
 
 
     <script type="text/javascript">

@@ -40,6 +40,9 @@ Route::post('/login/admin', 'Auth\LoginController@adminLogin');
 
 Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
 
+Route::post('/store', 'FileuploadController@store')->name('store');
+Route::get('/viewfile','FileuploadController@index');
+
 
 
 Route::view('/home', 'home')->middleware('auth');
