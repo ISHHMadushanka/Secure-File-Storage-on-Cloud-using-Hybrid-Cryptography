@@ -16,16 +16,16 @@
     </div>
 
 
-    <div class="wrapper">
+   <!-- <div class="wrapper"> -->
 
 
 
       <div class="homeContent clearfix">
 
 
-        <h1 class="topic">File Split Project</h1>
+        <h1 class="topic" style="margin: 23px 0 0 -4px;">File Split Project</h1>
 
-        <p style="font-size: 1.3vw;">Latest news has revealed that the security of cryptographic keys have broken when retrieving
+        <p class="card-text" style="font-size: 1.3vw;">Latest news has revealed that the security of cryptographic keys have broken when retrieving
              information from back doors of cryptographic
              softwares once encryption key is exposed.Therefore, the most securely way to store data is
               limiting of the access of attackers to the ciphertext.</p>
@@ -87,7 +87,7 @@
 
           </div> <!--homeContent-->
 
-        </div> <!-- wrapper-->
+    <!--    </div> <!-- wrapper-->
 
 
 @endsection
